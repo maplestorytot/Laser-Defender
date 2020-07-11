@@ -1,0 +1,21 @@
+Scaling: pictures can be scaled (see tranform object), or can change the Pixels per unit
+- most important image to scale is the background image
+- find one that fits with the aspect ratio eg pixels 512 x 320 = 512/320 = 8/5 not same as 16/9
+1) set camera size to 6 or any number is fine
+2) choose an aspect ratio eg 16/9
+3) camera's height: 6*2 = 12
+   camera's width: 16/9*12
+4) setting PPU of raw files:
+	look at the dimensions of the image eg 512 x 320
+	PPU=320/camera's height,
+	though may not fit the width, therefore need a picture that gets the aspect ratio correct
+
+
+How to use sprite, animations
+1) create new game object (player), with sprite renderer
+2) download sprite sheet and may need to splice it into individual sprite (pictures)
+3) drag a set of sprites eg sprites for walking into the game object and create a new animation eg called walking
+4) repeat and place these animations into an animation folder, and animator controllor folder
+5) add rigid body 2d and 2d box collision and add physics material to them
+
+
